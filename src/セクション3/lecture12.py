@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 
 if __name__ == '__main__':
     points = np.arange(-5, 5, 0.01)
+    #https://deepage.net/features/numpy-meshgrid.html
     dx, dy = np.meshgrid(points, points)
     print(points)
 
@@ -46,15 +47,15 @@ if __name__ == '__main__':
 
     #便利な関数
     ary = np.array([[1,2,3], [4,5,6], [7,8,9]])
-    bool= np.array([True, False, True])
+    bool_array= np.array([True, False, True])
     print(ary.sum())    #45
     print(ary.sum(0))   #[12 15 18] (列方向に足す)
     print(ary.mean())   #5.0 (平均)
     print(ary.std())    #2.581988897471611 (標準偏差)
     print(ary.var())    #6.666666666666667 (分散)
     #https://sci-pursuit.com/math/statistics/standard-deviation.html
-    print(bool.any())   #1つでもTrueがあればTrue
-    print(bool.all())   #全てがFaulseならFalse
+    print(bool_array.any())   #1つでもTrueがあればTrue
+    print(bool_array.all())   #全てがFaulseならFalse
 
     #ソート
     rand_array = np.random.randn(5,5)

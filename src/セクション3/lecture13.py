@@ -5,7 +5,6 @@ Created on 2018/08/26
 '''
 
 import numpy as np
-import matplotlib.pyplot as plt
 
 if __name__ == '__main__':
     arr = np.arange(5)
