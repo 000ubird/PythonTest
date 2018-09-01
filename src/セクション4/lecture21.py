@@ -47,4 +47,8 @@ if __name__ == '__main__':
     dtype: float64
     '''
 
+    array = ["hoge", 1234, 10.23]
+    print(array)
+    print(type(array))
+
     pass
